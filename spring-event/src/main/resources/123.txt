@@ -1,0 +1,42 @@
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(1, 1, '900001', '模板名称', 'templateName', 0, 1, 1, 0, 1, 0, 1, '2022-11-07 16:36:20', '2022-11-17 08:52:11');
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(2, 1, '900001', '主键ID', 'id', 1, 0, 1, 0, 0, 0, 1, '2022-11-07 16:36:20', '2022-11-17 08:52:11');
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(3, 1, '900001', '模板名称模糊', 'templateNameLike', 0, 0, 0, 1, 0, 0, 1, '2022-11-08 10:48:20', '2022-11-17 08:52:11');
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(4, 2, '900002', '主键ID', 'id', 1, 0, 1, 0, 0, 0, 1, '2022-11-09 10:38:54', '2022-11-17 08:52:11');
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(5, 2, '900002', '工单预警名称', 'tempName', 0, 1, 1, 0, 0, 0, 1, '2022-11-09 10:38:54', '2022-11-17 08:52:11');
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(6, 3, '900003', '主键ID', 'ticketId', 1, 0, 1, 0, 0, 0, 0, '2022-11-16 18:17:13', '2022-11-16 18:17:13');
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(7, 3, '900003', '工单标题', 'ticketTitle', 0, 1, 1, 0, 1, 0, 0, '2022-11-16 18:17:13', '2022-11-16 18:17:13');
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(8, 3, '900003', '工单编号', 'ticketNo', 0, 0, 1, 0, 0, 0, 0, '2022-11-16 18:17:13', '2022-11-16 18:17:13');
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(9, 3, '900003', '创建人', 'createUserName', 0, 0, 1, 0, 0, 0, 0, '2022-11-16 18:17:13', '2022-11-16 18:17:13');
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(10, 3, '900003', '创建时间', 'createTime', 0, 0, 1, 0, 0, 0, 0, '2022-11-16 18:17:14', '2022-11-16 18:17:14');
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(11, 3, '900003', '处理人名称', 'processUserName', 0, 0, 1, 0, 0, 0, 0, '2022-11-17 08:03:53', '2022-11-17 08:03:53');
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(12, 3, '900003', '工单模板名称', 'templateName', 0, 0, 1, 0, 0, 0, 0, '2022-11-17 08:08:15', '2022-11-17 08:08:15');
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(13, 3, '900003', '工单状态', 'ticketStatusText', 0, 0, 1, 0, 0, 0, 0, '2022-11-17 08:08:15', '2022-11-17 08:08:15');
+INSERT INTO flow_data_module_field
+(id, module_id, module_code, column_nick_name, data_field, is_value, is_text, is_show, is_search, is_select, sort_num, is_deleted, row_create_time, row_update_time)
+VALUES(14, 3, '900003', '优先级', 'priority', 0, 0, 1, 0, 0, 0, 0, '2022-11-17 08:08:15', '2022-11-17 08:08:15');

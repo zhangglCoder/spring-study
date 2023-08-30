@@ -1,0 +1,75 @@
+<configuration  xmlns="http://ch.qos.logback/xml/ns/logback"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://ch.qos.logback/xml/ns/logback
+                https://raw.githubusercontent.com/enricopulatzo/logback-XSD/master/src/main/xsd/logback.xsd">
+
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %date  %class : %msg
+            </pattern>
+        </encoder>
+    </appender>
+
+<!--    <appender name="file" class="ch.qos.logback.core.FileAppender">-->
+<!--        <encoder>-->
+<!--            <pattern>-->
+<!--                %date  %class : %msg-->
+<!--            </pattern>-->
+<!--        </encoder>-->
+<!--        <file>logback.log</file>-->
+<!--        <append>false</append>-->
+<!--    </appender>-->
+
+    <appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logback.log</file>
+        <encoder>
+            <pattern>
+                %date  %class : %msg
+            </pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logback_%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+            <maxFileSize>10KB</maxFileSize>
+            <maxHistory>3</maxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="rollingErrorFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logback.error.log</file>
+        <encoder>
+            <pattern>
+                %date  %class : %msg
+            </pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logback.error_%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+            <maxFileSize>10KB</maxFileSize>
+            <maxHistory>3</maxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
+        </rollingPolicy>
+    </appender>
+
+    <logger name="cn" level="DEBUG" />
+
+    <root level="INFO">
+        <appender-ref ref="console" />
+        <appender-ref ref="rollingErrorFile" />
+        <appender-ref ref="rollingFile" />
+    </root>
+
+<!--    <logger name="cn">-->
+<!--        <appender-ref ref="rollingFile" />-->
+<!--    </logger>-->
+
+</configuration>
